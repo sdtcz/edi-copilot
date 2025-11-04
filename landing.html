@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDI Copilot - Your AI Copilot for EDI Workflows</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">EDI Copilot</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#use-cases">Use Cases</a>
+                <a href="#pricing">Pricing</a>
+                <a href="login.html" class="nav-login">Sign In</a>
+                <a href="#demo" class="btn-primary-nav">Book Demo</a>
+            </div>
+            <button class="nav-mobile-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Powered by Advanced AI</span>
+                </div>
+                <h1 class="hero-title">
+                    Your AI Copilot for EDI—<br>
+                    <span class="gradient-text">Faster, Clearer, Error-Free</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Monitor, troubleshoot, and optimize your EDI flows with AI-powered automation. 
+                    Reduce errors by 90%, cut onboarding time from weeks to days, and give your team superpowers.
+                </p>
+                <div class="hero-cta">
+                    <a href="#demo" class="btn-primary-large">
+                        <span>Book a Demo</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <a href="#trial" class="btn-secondary-large">
+                        Start Free Trial
+                    </a>
+                </div>
+                <div class="hero-social-proof">
+                    <div class="social-proof-avatars">
+                        <div class="avatar">👤</div>
+                        <div class="avatar">👤</div>
+                        <div class="avatar">👤</div>
+                        <div class="avatar">+</div>
+                    </div>
+                    <p>Trusted by modern logistics, retail, and manufacturing teams</p>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="preview-header">
+                        <div class="preview-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="preview-title">EDI Copilot Dashboard</div>
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-metric">
+                            <div class="metric-icon">📊</div>
+                            <div class="metric-value">98.5%</div>
+                            <div class="metric-label">Success Rate</div>
+                        </div>
+                        <div class="preview-metric">
+                            <div class="metric-icon">⚡</div>
+                            <div class="metric-value">1.2s</div>
+                            <div class="metric-label">Avg Response</div>
+                        </div>
+                        <div class="preview-metric">
+                            <div class="metric-icon">🤖</div>
+                            <div class="metric-value">AI</div>
+                            <div class="metric-label">Active</div>
+                        </div>
+                    </div>
+                    <div class="preview-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Logos -->
+    <section class="logos">
+        <div class="container">
+            <p class="logos-title">Trusted by industry leaders</p>
+            <div class="logos-grid">
+                <div class="logo-item">WALMART</div>
+                <div class="logo-item">TARGET</div>
+                <div class="logo-item">AMAZON</div>
+                <div class="logo-item">HOME DEPOT</div>
+                <div class="logo-item">COSTCO</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built for modern EDI teams</h2>
+                <p class="section-subtitle">Everything you need to manage EDI at scale, powered by AI</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#gradient1)"/>
+                            <path d="M24 16v16M16 24h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#667eea"/>
+                                    <stop offset="1" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-time Monitoring</h3>
+                    <p class="feature-description">
+                        Track every transaction as it happens. Get instant alerts when issues arise, 
+                        with AI-powered insights into what went wrong and how to fix it.
+                    </p>
+                    <div class="feature-stats">
+                        <span class="stat">99.9% Uptime</span>
+                        <span class="stat">Sub-second Alerts</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#gradient2)"/>
+                            <circle cx="24" cy="24" r="8" stroke="white" stroke-width="2"/>
+                            <path d="M24 16v8l4 4" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#f093fb"/>
+                                    <stop offset="1" stop-color="#f5576c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AI-Assisted Troubleshooting</h3>
+                    <p class="feature-description">
+                        Let AI diagnose issues automatically. Get step-by-step remediation suggestions, 
+                        auto-fix common errors, and learn from historical patterns.
+                    </p>
+                    <div class="feature-stats">
+                        <span class="stat">90% Faster Resolution</span>
+                        <span class="stat">Auto-Fix Enabled</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#gradient3)"/>
+                            <path d="M16 24l6 6 10-12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient3" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#4facfe"/>
+                                    <stop offset="1" stop-color="#00f2fe"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Workflow Automation</h3>
+                    <p class="feature-description">
+                        Automate partner onboarding, field mapping, and compliance checks. 
+                        Reduce setup time from weeks to hours with intelligent automation.
+                    </p>
+                    <div class="feature-stats">
+                        <span class="stat">88% Time Saved</span>
+                        <span class="stat">Zero-Code Setup</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How EDI Copilot connects everything</h2>
+                <p class="section-subtitle">A seamless flow from partner to system to insight</p>
+            </div>
+            <div class="flow-diagram">
+                <div class="flow-item" data-aos="fade-right">
+                    <div class="flow-number">1</div>
+                    <div class="flow-content">
+                        <h3>Trading Partners</h3>
+                        <p>Connect unlimited partners with pre-built templates</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-item" data-aos="fade-up">
+                    <div class="flow-number">2</div>
+                    <div class="flow-content">
+                        <h3>EDI Copilot</h3>
+                        <p>AI validates, transforms, and routes transactions</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-item" data-aos="fade-left">
+                    <div class="flow-number">3</div>
+                    <div class="flow-content">
+                        <h3>Your Systems</h3>
+                        <p>Seamless integration with ERP, WMS, and more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flow-features">
+                <div class="flow-feature">✓ Real-time validation</div>
+                <div class="flow-feature">✓ Intelligent routing</div>
+                <div class="flow-feature">✓ Error recovery</div>
+                <div class="flow-feature">✓ Compliance monitoring</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases" id="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built for every role in your organization</h2>
+                <p class="section-subtitle">From IT to operations to customer service</p>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card" data-aos="zoom-in">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">👨‍💻</div>
+                        <h3>For IT Teams</h3>
+                    </div>
+                    <p class="use-case-description">
+                        "We cut partner onboarding from 3 weeks to 2 days. The AI suggests field mappings, 
+                        and we just review and approve. Game changer."
+                    </p>
+                    <div class="use-case-benefits">
+                        <span>⚡ Faster deployment</span>
+                        <span>🔧 Less manual work</span>
+                        <span>📊 Better visibility</span>
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">📋</div>
+                        <h3>For Operations</h3>
+                    </div>
+                    <p class="use-case-description">
+                        "Real-time dashboards show us exactly which orders are stuck and why. 
+                        No more hunting through logs or waiting for IT."
+                    </p>
+                    <div class="use-case-benefits">
+                        <span>🎯 Clear visibility</span>
+                        <span>⏱️ Faster resolution</span>
+                        <span>📈 Better metrics</span>
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🎧</div>
+                        <h3>For Customer Service</h3>
+                    </div>
+                    <p class="use-case-description">
+                        "When customers ask 'Where's my order?', we can trace it through the entire EDI flow 
+                        in seconds. Customers love the transparency."
+                    </p>
+                    <div class="use-case-benefits">
+                        <span>😊 Happier customers</span>
+                        <span>🔍 Order tracking</span>
+                        <span>⚡ Quick answers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Loved by operations and IT leaders</h2>
+            </div>
+            <div class="testimonial-carousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "EDI Copilot transformed how we handle B2B transactions. Setup time went from weeks to days, 
+                            and our error rate dropped by 85%. The AI troubleshooting is incredible."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👤</div>
+                            <div class="author-info">
+                                <div class="author-name">Sarah Chen</div>
+                                <div class="author-title">VP of Operations, RetailCo</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "As a CIO, I love the visibility. We can see exactly what's happening with every transaction, 
+                            and the AI alerts us before issues become problems. ROI in under 3 months."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👤</div>
+                            <div class="author-info">
+                                <div class="author-name">Michael Torres</div>
+                                <div class="author-title">CIO, LogisticsPro</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "The workflow automation is a lifesaver. We onboard new partners in hours instead of weeks. 
+                            Our team can focus on strategy instead of manual data mapping."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👤</div>
+                            <div class="author-info">
+                                <div class="author-name">Jennifer Park</div>
+                                <div class="author-title">COO, Manufacturing Inc</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-btn" id="prevTestimonial">←</button>
+                <div class="testimonial-dots" id="testimonialDots"></div>
+                <button class="testimonial-btn" id="nextTestimonial">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, transparent pricing</h2>
+                <p class="section-subtitle">Start free, scale as you grow</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Starter</h3>
+                        <p class="pricing-description">For teams getting started with EDI</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$499</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 3 trading partners</li>
+                        <li>✓ 10,000 transactions/month</li>
+                        <li>✓ Basic monitoring</li>
+                        <li>✓ Email support</li>
+                        <li>✓ Standard integrations</li>
+                    </ul>
+                    <a href="#trial" class="btn-pricing">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Professional</h3>
+                        <p class="pricing-description">For growing businesses</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$1,499</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 15 trading partners</li>
+                        <li>✓ 100,000 transactions/month</li>
+                        <li>✓ AI-powered monitoring</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Advanced integrations</li>
+                        <li>✓ Auto-fix capabilities</li>
+                        <li>✓ Custom workflows</li>
+                    </ul>
+                    <a href="#trial" class="btn-pricing-featured">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <p class="pricing-description">For large-scale operations</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited trading partners</li>
+                        <li>✓ Unlimited transactions</li>
+                        <li>✓ Full AI suite</li>
+                        <li>✓ 24/7 dedicated support</li>
+                        <li>✓ Custom integrations</li>
+                        <li>✓ SLA guarantees</li>
+                        <li>✓ White-glove onboarding</li>
+                        <li>✓ Custom contracts</li>
+                    </ul>
+                    <a href="#demo" class="btn-pricing">Talk to Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently asked questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">How long does implementation take?</h3>
+                    <p class="faq-answer">
+                        Most customers are up and running in under a week. Our white-glove onboarding team 
+                        handles setup, integration, and training. For complex enterprises, expect 2-4 weeks.
+                    </p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                    <h3 class="faq-question">What EDI standards do you support?</h3>
+                    <p class="faq-answer">
+                        We support all major EDI standards including ANSI X12, EDIFACT, XML, and custom formats. 
+                        Our AI learns your specific requirements and adapts automatically.
+                    </p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="faq-question">Can I integrate with my existing systems?</h3>
+                    <p class="faq-answer">
+                        Yes! We integrate with all major ERP systems (SAP, Oracle, NetSuite, etc.), WMS platforms, 
+                        and custom applications via REST API or direct database connections.
+                    </p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <h3 class="faq-question">Is my data secure?</h3>
+                    <p class="faq-answer">
+                        Absolutely. We're SOC 2 Type II certified, GDPR compliant, and use enterprise-grade encryption. 
+                        Your data never leaves your designated region, and we offer on-premise deployment for enterprises.
+                    </p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="faq-question">What kind of support do you offer?</h3>
+                    <p class="faq-answer">
+                        All plans include email support. Professional plans get priority support with 4-hour response times. 
+                        Enterprise customers get 24/7 dedicated support with a named account manager.
+                    </p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <h3 class="faq-question">Can I try before I buy?</h3>
+                    <p class="faq-answer">
+                        Yes! We offer a 14-day free trial with full access to all features. No credit card required. 
+                        Our team will help you set up a proof-of-concept with your actual data.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to transform your EDI workflows?</h2>
+                <p class="cta-subtitle">Join hundreds of companies already using EDI Copilot</p>
+                <div class="cta-buttons">
+                    <a href="#demo" class="btn-cta-primary">Book a Demo</a>
+                    <a href="#trial" class="btn-cta-secondary">Start Free Trial</a>
+                </div>
+                <p class="cta-note">14-day free trial • No credit card required • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🤖</span>
+                        <span class="logo-text">EDI Copilot</span>
+                    </div>
+                    <p class="footer-description">
+                        AI-powered EDI automation for modern businesses.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#demo">Book Demo</a>
+                    <a href="login.html">Sign In</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#about">About</a>
+                    <a href="#careers">Careers</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="#docs">Documentation</a>
+                    <a href="#api">API Reference</a>
+                    <a href="#support">Support</a>
+                    <a href="#status">Status</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EDI Copilot. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#security">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="modal-overlay" id="demoModal">
+        <div class="modal">
+            <button class="modal-close" id="closeModal">×</button>
+            <div class="modal-content">
+                <h2>Book Your Demo</h2>
+                <p>See how EDI Copilot can transform your workflows</p>
+                <form class="demo-form" id="demoForm">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Work Email" required>
+                    <input type="text" placeholder="Company Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="">Company Size</option>
+                        <option>1-50 employees</option>
+                        <option>51-200 employees</option>
+                        <option>201-1000 employees</option>
+                        <option>1000+ employees</option>
+                    </select>
+                    <button type="submit" class="btn-submit">Book Demo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/landing.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
